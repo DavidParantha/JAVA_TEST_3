@@ -16,6 +16,7 @@ public class Question3File {
             try (FileOutputStream fos = new FileOutputStream(path, true);) {//append = true means
                 fos.write(msg.getBytes());
             } catch (IOException e) {
+            
                 throw new RuntimeException(e);
             }
         }
@@ -25,4 +26,5 @@ public class Question3File {
 
 
     }
+
 }
