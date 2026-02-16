@@ -13,7 +13,7 @@ public class Question3File {
                 """;
         if (path.exists() && path.isFile()) {
             System.out.println("File appended successfully");
-            try (FileOutputStream fos = new FileOutputStream(path, true);) {//append = true means
+            try (FileOutputStream fos = new FileOutputStream(path, true);) {  
                 fos.write(msg.getBytes());
             } catch (IOException e) {
             
@@ -28,3 +28,4 @@ public class Question3File {
     }
 
 }
+
