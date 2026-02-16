@@ -6,7 +6,7 @@ public class Question1Array {
             System.out.println("Invalid Array");
             return;
         }
-        int min=no[0];
+          int min=no[0];
         int max=  no[0];
         for (int i=1;i<no.length;i++) {
             if (no[i] <min) {
@@ -20,19 +20,20 @@ public class Question1Array {
     }
     public static void main(String[]args){
         Scanner scanner=new Scanner(System.in);
-        System.out.print("Enter no.of elements:");
+            System.out.print("Enter no.of elements:");
         int size=scanner.nextInt();
         if(size<=0){
             System.out.println("Invalidarray size");
             return;
         }
         int[]numbers=new int[size];
-        System.out.println("Enter"+size+"no:");
+          System.out.println("Enter"+size+"no:");
         for(int i=0;i<size;i++){
             numbers[i]=scanner.nextInt();
         }
-        Question1Array(numbers);
+                      Question1Array(numbers);
         scanner.close();
     }
 }
+
 
